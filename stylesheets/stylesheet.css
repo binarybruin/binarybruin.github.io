@@ -1,6 +1,6 @@
-/* * {
+* {
   border: 2px dotted black;
-} */
+} 
 
 body {
 	background-color: #3377CC;
@@ -40,8 +40,10 @@ div {
 }
 
 .navbar {
+	width: auto;
 	margin-left: 50px;
-	position: relative;
+	margin-top: 50px;
+	position: absolute;
 	border: none;
 	font-size: 20px;
 	padding: 10px;
