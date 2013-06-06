@@ -17,26 +17,27 @@ div {
 }
 
 #header {
-	height: 175px;
-	width: 350px;
+	height: 125px;
+	width: 300px;
 	border-radius: 10px;
 	background-color: #010133;
 	margin-left: 10px;
 }
 
 #header img {
-	height: 100px;
-	width: 100px;
+	height: 64px;
+	width: 64px;
 	margin: auto;
 	padding: 5px;
 	border: 3px dotted #333388;
 	border-radius: 10px;
 }
 
-#header h3 {
+#header h4 {
 	font-family: Verdana;
 	color: #DDDDFF;
 	text-align: center;
+	margin-top: 0px;
 }
 
 .navbar {
