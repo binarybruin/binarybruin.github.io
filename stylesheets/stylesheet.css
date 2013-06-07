@@ -4,24 +4,22 @@
 
 body {
 	background-color: #3377CC;
+	height: auto;
+	width: auto;
 }
 
 div {
-	height: 40px;
-	width: auto;
-	border: 3px solid black;
+	/*border: 3px solid black;*/
 	border-radius: 5px;
-	display: inline-block;
-	padding: 5px;
+	margin: 10px 10px 10px 10px;
+	/*padding: 10px;*/
 	text-align: center;
 }
 
 #header {
-	height: 125px;
-	width: 300px;
+	height: 150px;
 	border-radius: 10px;
 	background-color: #010133;
-	margin-left: 10px;
 }
 
 #header img {
@@ -33,21 +31,34 @@ div {
 	border-radius: 10px;
 }
 
-#header h4 {
+#header h5 {
 	font-family: Verdana;
 	color: #DDDDFF;
 	text-align: center;
 	margin-top: 0px;
 }
 
-.navbar {
-	width: auto;
-	margin-left: 50px;
-	margin-top: 50px;
-	position: absolute;
+#dashboard {
+	width: 800px;
+	height: 75px;
+	background-color: yellow;
+}
+
+#dashboard img {
+	display: inline-block;
+	width: 70px;
+	height: 50px;
+}
+
+.sidebar {
+	width: 300px;
+	height: 500px;
+	display: inline;
 	border: none;
 	font-size: 20px;
-	padding: 10px;
+	float: left;
+	position: fixed;
+	margin-left: 100px;
 }
 
 #nav1 {
@@ -62,10 +73,25 @@ div {
 	background-color: blue;
 }
 
+#nav4 {
+	background-color: yellow;
+}
+
 .posts {
 	height: auto;
-	margin-top: 10px;
-	background-color: white;
-	display: block;
+	background-color: #CCCCCC;
+	overflow: auto;
+	float: right;
+	display: inline;
+}
+
+.posts p {
+	margin: 10px 10px 10px 10px;
+	text-align: left;
+}
+
+.posts img {
+	height: 400px;
 	position: relative;
+	margin: 10px 10px 10px 10px;
 }
