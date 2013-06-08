@@ -10,12 +10,18 @@ div:hover {
 	opacity: 1.0;
 }
 
+#top_dash {
+	display: none;
+}
+
 #contact_icons {
 	position: absolute;
+	display: none;
 }
 
 #c1, #c2 {
 	margin: 0px 0px 0px 0px;
+	display: inline-block;
 }
 
 #header {
