@@ -2,13 +2,13 @@ div {
 	border-radius: 5px;
 	margin: 10px 10px 10px 10px;
 	text-align: center;
-	border: 2px solid black;
 }
 
 #header {
 	height: 150px;
 	border-radius: 10px;
 	background-color: #010133;
+	border: 2px solid black;
 }
 
 #header img {
@@ -28,9 +28,12 @@ div {
 }
 
 #sidebar {
-	border: none;
 	font-size: 20px;
 	position: fixed;
+}
+
+#sidebar div {
+	border: 2px solid black;
 }
 
 #nav1 {
@@ -50,12 +53,10 @@ div {
 }
 
 #posts {
-	height: auto;
 	background-color: #CCCCCC;
-	overflow: auto;
-	display: inline;
+	/* overflow: auto;
+	display: inline; */
 	border: 2px dotted black;
-	float: right;
 	margin-top: 10px;
 }
 
@@ -65,8 +66,7 @@ div {
 }
 
 #posts img {
-	height: 500px;
-	position: relative;
+	/* height: 500px; */
 	margin: 10px 10px 10px 10px;
 }
 
@@ -77,8 +77,8 @@ div {
 
 #dashboard img {
 	display: inline-block;
-	width: 70px;
-	height: 50px;
+	/* width: 70px;
+	height: 50px; */
 	margin-top: 10px;
 }
 
