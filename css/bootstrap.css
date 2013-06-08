@@ -32,6 +32,15 @@ div:hover {
 	display: none;
 }
 
+/* #icon_div {
+	border-radius: none;
+} */
+
+#pooka {
+	font-weight: bold;
+	color: #fff;
+}
+
 #header {
 	height: 150px;
 	border-radius: 10px;
@@ -55,18 +64,15 @@ div:hover {
 	margin-top: 10px;
 }
 
-#sidebar {
+.sidebar {
 	font-size: 20px;
 	position: fixed;
-}
-
-#sidebar div {
-	border: 2px solid black;
 }
 
 #sidebutton {
 	color: #AFD5F0;
 	background-color: #0A2C45;
+	border: 2px solid black;
 }
 
 #posts {
