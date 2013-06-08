@@ -1,13 +1,27 @@
+
 div {
 	border-radius: 5px;
 	margin: 10px 10px 10px 10px;
 	text-align: center;
+	opacity: 0.85;
+}
+
+div:hover {
+	opacity: 1.0;
+}
+
+#contact_icons {
+	position: absolute;
+}
+
+#c1, #c2 {
+	margin: 0px 0px 0px 0px;
 }
 
 #header {
 	height: 150px;
 	border-radius: 10px;
-	background-color: #010133;
+	background-color: #327DB3;
 	border: 2px solid black;
 }
 
@@ -16,8 +30,8 @@ div {
 	width: 64px;
 	margin: auto;
 	padding: 5px;
-	border: 3px dotted #333388;
 	border-radius: 10px;
+	margin-top: 10px;
 }
 
 #header h5 {
@@ -36,24 +50,13 @@ div {
 	border: 2px solid black;
 }
 
-#nav1 {
-	background-color: red;
-}
-
-#nav2 {
-	background-color: green;
-}
-
-#nav3 {
-	background-color: blue;
-}
-
-#nav4 {
-	background-color: yellow;
+#sidebutton {
+	color: #AFD5F0;
+	background-color: #0A2C45;
 }
 
 #posts {
-	background-color: #CCCCCC;
+	background-color: #8899A6;
 	/* overflow: auto;
 	display: inline; */
 	border: 2px dotted black;
@@ -71,15 +74,12 @@ div {
 }
 
 #dashboard {
+	border-radius: 20px;
 	height: 75px;
-	background-color: yellow;
 }
 
 #dashboard img {
-	display: inline-block;
-	/* width: 70px;
-	height: 50px; */
-	margin-top: 10px;
+	margin-top: 15px;
 }
 
 
@@ -312,7 +312,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #384854;
 }
 
 a {
@@ -334,7 +334,7 @@ a:focus {
 
 .img-polaroid {
   padding: 4px;
-  background-color: #fff;
+  background-color: #BDCFDB;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
