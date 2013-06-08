@@ -28,7 +28,6 @@ div:hover {
 }
 
 #contact_icons {
-	position: absolute;
 	display: none;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -45,7 +44,6 @@ div:hover {
 }
 
 #header {
-	height: 150px;
 	border-radius: 10px;
 	background-color: #327DB3;
 	border: 2px solid black;
