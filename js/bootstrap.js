@@ -3,9 +3,9 @@ function hideshow(which){
 	if (!document.getElementById)
 		return
 	if (which.style.display=="block")
-		$(which).fadeOut();
+		$(which).fadeOut(500);
 	else
-		$(which).fadeIn();
+		$(which).fadeIn(500);
 }
 
 

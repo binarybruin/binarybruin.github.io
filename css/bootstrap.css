@@ -20,6 +20,7 @@ div:hover {
 	font-size: 12px;
 	background-color: #8899A6;
 	display: none;
+	transition: none;
 }
 
 #mini_bio p {
