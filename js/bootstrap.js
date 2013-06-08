@@ -1,11 +1,11 @@
 
 function hideshow(which){
 	if (!document.getElementById)
-	return
+		return
 	if (which.style.display=="block")
-	which.style.display="none"
+		$(which).fadeOut();
 	else
-	which.style.display="block"
+		$(which).fadeIn();
 }
 
 
