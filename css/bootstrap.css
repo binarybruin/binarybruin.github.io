@@ -4,7 +4,7 @@ div {
 	border-radius: 5px;
 	margin: 10px 10px 10px 10px;
 	text-align: center;
-	opacity: 0.75;
+	opacity: 0.8;
 	transition: opacity 400ms linear;
 }
 
@@ -13,11 +13,14 @@ div:hover {
 	transition: opacity 400ms linear;
 }
 
-#mini_bio {
-	font-size: 12px;
-	background-color: #8899A6;
+#bio_container {
+	margin: 10px 10px 10px 10px;
 	display: none;
-	transition: none;
+}
+
+#mini_bio {
+	font-size: 15px;
+	background-color: #8899A6;
 }
 
 #mini_bio p {
@@ -27,6 +30,9 @@ div:hover {
 #contact_icons {
 	position: absolute;
 	display: none;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: -5px;
 }
 
 /* #icon_div {
@@ -90,13 +96,8 @@ div:hover {
 	margin: 10px 10px 10px 10px;
 }
 
-#dashboard {
-	border-radius: 20px;
-	height: 75px;
-}
-
-#dashboard img {
-	margin-top: 15px;
+#footernote {
+	color: #ACACBC;
 }
 
 
