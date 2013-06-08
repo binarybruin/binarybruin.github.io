@@ -32,11 +32,6 @@ div:hover {
 	display: none;
 }
 
-#c1, #c2 {
-	margin: 0px 0px 0px 0px;
-	display: inline-block;
-}
-
 #header {
 	height: 150px;
 	border-radius: 10px;
