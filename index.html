@@ -16,14 +16,14 @@
 <body>
 
 	<div class="container-fluid">
-	<header class="row-fluid">
+	<!-- <header class="row-fluid" id="top_dash">
 		<article class="span12" id="dashboard">
 			<nav class="span8 offset3" id="contact_icons">
 				<div class="span2" id="c1"><a href="http://twitter.com/binarybruin"><img class="img-rounded" src="img/twitter.png" /></a></div>
 				<div class="span2" id="c2"><a href="http://facebook.com/michelle.auyoung"><img class="img-rounded" src="img/fb.png" /></a></div>
 			</nav>
 		</article>
-	</header>
+	</header> -->
 
 	<section class="row-fluid">
 		<section class="row-fluid">
@@ -35,7 +35,11 @@
 				<div id="sidebutton">About</div>
 				<div id="sidebutton">Work Samples</div>
 				<div id="sidebutton">Random Sample</div>
-				<div id="sidebutton">Contact+Connect</div>
+				<a href="javascript:hideshow(document.getElementById('contact_icons'))"><div id="sidebutton">Contact+Connect</div></a>
+				<nav id="contact_icons">
+					<div id="c1"><a href="http://twitter.com/binarybruin"><img class="img-rounded" src="img/twitter.png" /></a></div>
+					<div id="c2"><a href="http://facebook.com/michelle.auyoung"><img class="img-rounded" src="img/fb.png" /></a></div>
+				</nav>
 			</article>
 		</section>
 		
@@ -62,6 +66,7 @@
 	</div>
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/bootstrap.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
