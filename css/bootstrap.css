@@ -13,11 +13,6 @@ div:hover {
 	transition: opacity 400ms linear;
 }
 
-#main_pg {
-	width: 100%;
-	overflow:auto;
-}
-
 /* #top_bar {
 	display: inline-block; 
 } */
@@ -37,9 +32,18 @@ div:hover {
 	color: #333333;
 }
 
-#contact_icons {
+#contact_cont {
 	display: none;
+	transition: none;
+}
+
+#contact_icons div {
+	display: inline-block;
 	overflow: auto;
+}
+
+#contact_icons img {
+	transition: opacity 400ms linear;
 }
 
 /* #icon_div {
@@ -93,9 +97,8 @@ div #scrollable {
 
 #posts {
 	background-color: #8899A6;
-	overflow: auto;
-	border: 2px dotted black;
-	/* margin-top: 10px; */
+	width: auto;
+	/* border: 2px dotted black; */
 }
 
 #posts p {
@@ -104,8 +107,8 @@ div #scrollable {
 }
 
 #posts img {
-	margin: 10px 10px 10px 10px;
-	max-width: 100%;
+	margin: none;
+	overflow: auto;
 }
 
 #footernote {
@@ -6215,8 +6218,8 @@ a.badge:focus {
   bottom: 0;
   left: 0;
   padding: 15px;
-  background: #333333;
-  background: rgba(0, 0, 0, 0.75);
+  /* background: #333333;
+  background: rgba(0, 0, 0, 0.75); */
 }
 
 .carousel-caption h4,
