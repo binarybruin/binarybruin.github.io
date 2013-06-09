@@ -2,7 +2,6 @@
 
 div {
 	border-radius: 5px;
-	margin: 10px 10px 10px 10px;
 	text-align: center;
 }
 
@@ -16,9 +15,13 @@ img:hover {
 	transition: opacity 400ms linear;
 }
 
-/* #top_bar {
-	display: inline-block; 
-} */
+#top_nav {
+	margin-top: 10px; 
+}
+
+#top_nav div {
+	margin: 5px 5px 5px 5px;
+}
 
 #bio_container {
 	margin: 10px 10px 10px 10px;
@@ -48,10 +51,6 @@ img:hover {
 #contact_icons img {
 	transition: opacity 400ms linear;
 }
-
-/* #icon_div {
-	border-radius: none;
-}  */
 
 #pooka {
 	font-weight: bold;
@@ -86,6 +85,10 @@ img:hover {
 	position: fixed;
 }
 
+.sidebar div {
+	margin: 5px 5px 5px 5px;
+}
+
 div #scrollable {
     overflow-y: auto;
 	padding: 10px;
@@ -100,18 +103,10 @@ div #scrollable {
 
 #posts {
 	background-color: #8899A6;
-	width: auto;
-	/* border: 2px dotted black; */
 }
 
-#posts p {
+#posts p, img {
 	margin: 10px 10px 10px 10px;
-	text-align: left;
-}
-
-#posts img {
-	margin: none;
-	overflow: auto;
 }
 
 #footernote {
