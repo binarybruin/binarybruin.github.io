@@ -13,6 +13,11 @@ div:hover {
 	transition: opacity 400ms linear;
 }
 
+#main_pg {
+	width: 100%;
+	overflow:auto;
+}
+
 #bio_container {
 	margin: 10px 10px 10px 10px;
 	display: none;
@@ -29,14 +34,12 @@ div:hover {
 
 #contact_icons {
 	display: none;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: -5px;
+	overflow: auto;
 }
 
 /* #icon_div {
 	border-radius: none;
-} */
+}  */
 
 #pooka {
 	font-weight: bold;
@@ -47,6 +50,7 @@ div:hover {
 	border-radius: 10px;
 	background-color: #327DB3;
 	border: 2px solid black;
+	margin-top: -10px;
 }
 
 #header img {
@@ -70,10 +74,20 @@ div:hover {
 	position: fixed;
 }
 
+div #scrollable {
+    overflow-y: scroll;
+	padding: 10px;
+    height: 100%;
+}
+
 #sidebutton {
 	color: #AFD5F0;
 	background-color: #0A2C45;
 	border: 2px solid black;
+}
+
+#emptyfooter {
+	opacity: 0;
 }
 
 #posts {
@@ -90,8 +104,8 @@ div:hover {
 }
 
 #posts img {
-	/* height: 500px; */
 	margin: 10px 10px 10px 10px;
+	max-width: 100%;
 }
 
 #footernote {
@@ -329,6 +343,7 @@ body {
   line-height: 20px;
   color: #333333;
   background-color: #435C6E;
+  overflow:auto;
 }
 
 a {
@@ -339,7 +354,7 @@ a {
 a:hover,
 a:focus {
   color: #005580;
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 .img-rounded {

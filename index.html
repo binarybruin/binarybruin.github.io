@@ -18,10 +18,10 @@
 	<div class="container-fluid">
 	
 	<!-- CODE FOR MAIN PAGE -->
-	<section class="row-fluid">
+	<section class="row-fluid" id="main_pg">
 		<section class="row-fluid">
 			<!-- CODE FOR SIDE BAR -->
-			<div class="span3 sidebar">
+			<div class="span3 sidebar" id="scrollable">
 				<div class="span12" id="header">
 					<img class="img-polaroid" src="http://www.gravatar.com/avatar/8517da374e3aed4709fb7b1580d8baef?d=retro&s=140" />
 					<h5>the crossroads between the art of imagination and technology</h5>
@@ -34,17 +34,18 @@
 				</nav>
 				<a href="javascript:hideshow(document.getElementById('contact_icons'))"><div class="span12" id="sidebutton">Work Samples</div></a>
 				<a href="javascript:hideshow(document.getElementById('contact_icons'))"><div class="span12" id="sidebutton">Random Sample</div></a>
-				<a href="javascript:hideshow(document.getElementById('contact_icons'))"><div class="span12" id="sidebutton">Contact+Connect</div></a>
-				<nav id="contact_icons">
+				<a href="javascript:hideshow(document.getElementById('contact_icons'))"><div class="span12" id="sidebutton">Contact</div></a>
+				<nav class="row-fluid" id="contact_icons">
 					<div class="span3" id="icondiv"><a href="http://twitter.com/binarybruin"><img class="img-rounded" src="img/twitter.png" /></a></div>
 					<div class="span3" id="icondiv"><a href="http://facebook.com/michelle.auyoung"><img class="img-rounded" src="img/fb.png" /></a></div>
 				</nav>
+				<div class="span12" id="emptyfooter"></div>
 			</div>
 		</section>
 		
 		<!-- CODE FOR POST CONTENT -->
 		<section class="row-fluid">
-			<div class="span9 offset3" id="posts">
+			<div class="span8 offset3" id="posts">
 				<div class="row-fluid">
 					<div class="span3">
 						<p>stuff goes here</p>
