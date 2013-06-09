@@ -4,8 +4,10 @@ function hideshow(which){
 		return
 	if (which.style.display=="block")
 		$(which).fadeOut(500);
-	else
+	else {
 		$(which).fadeIn(500);
+		which.scrollIntoView(false);
+	}
 }
 
 
