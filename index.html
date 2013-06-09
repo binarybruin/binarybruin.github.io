@@ -7,6 +7,7 @@
 <title>pooka bytes by binarybruin</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+	
 <!-- HTML5 shim for IE backwards compatibility -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,30 +17,33 @@
 <body>
 
 	<div class="container-fluid">
+	<header class="page-header">
+		<nav class="row-fluid offset3 mobileheader" id="top_nav">
+			<a href="javascript:hideshow(document.getElementById('bio_container'))"><div class="span2 btn">About</div></a>
+			<a href="javascript:hideshow(document.getElementById('contact_icons'))"><div class="span2 btn">Work Samples</div></a>
+			<a href="javascript:hideshow(document.getElementById('contact_icons'))"><div class="span2 btn">Random Sample</div></a>
+			<a href="javascript:hideshow(document.getElementById('contact_icons'))"><div class="span2 btn">Contact</div></a>
+		</nav>
+	</header>
 	
 	<!-- CODE FOR MAIN PAGE -->
 	<section class="row-fluid" id="main_pg">
 		<section class="row-fluid">
 			<!-- CODE FOR SIDE BAR -->
-			<div class="span3 sidebar" id="scrollable">
+			<div class="span3 sidebar carousel-caption" id="scrollable">
 				<div class="span12" id="header">
 					<img class="img-polaroid" src="http://www.gravatar.com/avatar/8517da374e3aed4709fb7b1580d8baef?d=retro&s=140" />
 					<h5>the crossroads between the art of imagination and technology</h5>
 				</div>
-				<a href="javascript:hideshow(document.getElementById('bio_container'))"><div class="span12" id="sidebutton">About</div></a>
 				<nav id="bio_container">
 					<div class="span12" id="mini_bio">
 						<p><a href="http://en.wikipedia.org/wiki/P%C3%BAca"><span id="pooka">Pooka</span></a> bytes are my idea of creative coding.  I love art and technology, and I'm excited to continue experimenting more with interactive media.  This site is a mini portfolio of some of my work.  Enjoy!</p>
 					</div>
 				</nav>
-				<a href="javascript:hideshow(document.getElementById('contact_icons'))"><div class="span12" id="sidebutton">Work Samples</div></a>
-				<a href="javascript:hideshow(document.getElementById('contact_icons'))"><div class="span12" id="sidebutton">Random Sample</div></a>
-				<a href="javascript:hideshow(document.getElementById('contact_icons'))"><div class="span12" id="sidebutton">Contact</div></a>
 				<nav class="row-fluid" id="contact_icons">
 					<div class="span3" id="icondiv"><a href="http://twitter.com/binarybruin"><img class="img-rounded" src="img/twitter.png" /></a></div>
 					<div class="span3" id="icondiv"><a href="http://facebook.com/michelle.auyoung"><img class="img-rounded" src="img/fb.png" /></a></div>
 				</nav>
-				<div class="span12" id="emptyfooter"></div>
 			</div>
 		</section>
 		
@@ -69,5 +73,6 @@
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>

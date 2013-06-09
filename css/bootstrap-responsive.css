@@ -895,6 +895,17 @@
   .modal.fade.in {
     top: 20px;
   }
+  
+   /*CUSTOM CSS*/
+  .carousel-caption {
+    position: relative;
+	margin-top: auto;
+  }
+  
+  .mobileheader {
+    margin-top: 0;
+	margin-left: 0;
+	}
 }
 
 @media (max-width: 480px) {
@@ -944,9 +955,16 @@
     padding: 10px;
     margin: -10px;
   }
+  /*CUSTOM CSS*/
   .carousel-caption {
-    position: static;
+    position: relative;
+	margin-top: auto;
   }
+  
+  .mobileheader {
+    margin-top: 0;
+	margin-left: 0;
+	}
 }
 
 @media (max-width: 979px) {
