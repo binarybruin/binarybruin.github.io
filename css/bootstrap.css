@@ -93,8 +93,7 @@ div #scrollable {
 
 #posts {
 	background-color: #8899A6;
-	/* overflow: auto;
-	display: inline; */
+	overflow: auto;
 	border: 2px dotted black;
 	/* margin-top: 10px; */
 }
