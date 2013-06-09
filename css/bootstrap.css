@@ -4,11 +4,14 @@ div {
 	border-radius: 5px;
 	margin: 10px 10px 10px 10px;
 	text-align: center;
+}
+
+img {
 	opacity: 0.8;
 	transition: opacity 400ms linear;
 }
 
-div:hover {
+img:hover {
 	opacity: 1.0;
 	transition: opacity 400ms linear;
 }
