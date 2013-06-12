@@ -1,4 +1,7 @@
-binarybruin.github.io
-=====================
+This repository is created to host my own custom web page.
 
-my web page
+It uses the Bootstrap framework with my own design customizations.
+
+All content and images/artwork are &copy; Michelle A.
+
+Bootstrap framework MIT licensed.
