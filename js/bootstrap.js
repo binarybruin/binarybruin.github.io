@@ -1,13 +1,24 @@
+/* CUSTOM CODE */
 
-function hideshow(which){
+function hideshow(div){
 	if (!document.getElementById)
 		return
-	if (which.style.display=="block")
-		$(which).fadeOut(500);
+	if (div.style.display=="block") {
+		$(div).fadeOut(500);
+		}
 	else {
-		$(which).fadeIn(500);
-		which.scrollIntoView(false);
+		$(div).fadeIn(500);
+		div.scrollIntoView(false);
 	}
+}
+
+function hideAll(div1, div2) {
+	if (!document.getElementById)
+		return
+	if (div1.style.display=="block")
+		$(div1).fadeOut(500);
+	if (div2.style.display=="block")
+		$(div2).fadeOut(500);
 }
 
 /* ===================================================

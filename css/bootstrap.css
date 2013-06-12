@@ -95,21 +95,49 @@ div #scrollable {
     height: 100%;
 }
 
-#sidebutton {
-	color: #AFD5F0;
-	background-color: #0A2C45;
-	border: 2px solid black;
+#home_content {
+	/* background-color: #8899A6; */
+	display: block;
 }
 
-#posts {
+#home_content p {
+	margin: 10px 10px 10px 10px;
+	color: white;
+}
+
+#post_content {
+	/* margin-top: 10px; */
 	background-color: #8899A6;
+	display: none;
 }
 
-#posts p, img {
+#post_content h4, img, embed {
 	margin: 10px 10px 10px 10px;
 }
 
+#post_content p {
+	text-align: left;
+	margin-left: 10px;
+}
+
+#link_content {
+	margin-top: 10px;
+	background-color: #8899A6;
+	display: none;
+}
+
+#link_content p {
+	margin: 0px 10px 10px 10px;
+}
+
+#click_here {
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+}
+
 #footernote {
+	margin-top: 10px;
 	color: #ACACBC;
 }
 
