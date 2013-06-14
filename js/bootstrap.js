@@ -22,6 +22,8 @@ function hideMain(posts, main){
 	if (document.getElementById('link_content').style.display=="block")
 		$(document.getElementById('link_content')).fadeOut(500);	
 	$(posts).fadeIn(500);
+	if ($(window).width() <= 768)
+		posts.scrollIntoView(false);
 }
 
 function hideAll(div1, div2, div3) {
