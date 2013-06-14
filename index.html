@@ -19,10 +19,10 @@
 	<div class="container-fluid">
 	<header class="row-fluid page-header">
 		<nav class="span9 offset3 mobileheader" id="top_nav">
-			<a href="javascript:hideshow(document.getElementById('bio_container'))"><div class="span3 btn btn-info">About</div></a>
-			<a href="javascript:hideshow(document.getElementById('post_content'))"><div class="span3 btn btn-info">Projects</div></a>
-			<a href="javascript:hideshow(document.getElementById('link_content'))"><div class="span3 btn btn-info">Online Portfolio</div></a>
-			<a href="javascript:hideshow(document.getElementById('contact_cont'))"><div class="span3 btn btn-info">Connect</div></a>
+			<a href="javascript:hideShow(document.getElementById('bio_container'))"><div class="span3 btn btn-info">About</div></a>
+			<a href="javascript:hideMain(document.getElementById('post_content'), document.getElementById('home_content'))"><div class="span3 btn btn-info">Projects</div></a>
+			<a href="javascript:hideMain(document.getElementById('link_content'), document.getElementById('home_content'))"><div class="span3 btn btn-info">Online Portfolio</div></a>
+			<a href="javascript:hideShow(document.getElementById('contact_cont'))"><div class="span3 btn btn-info">Connect</div></a>
 		</nav>
 	</header>
 	
@@ -31,14 +31,14 @@
 		<!-- CODE FOR SIDE BAR -->
 		<section class="row-fluid">
 			<div class="span3 sidebar carousel-caption" id="scrollable">
-				<a href="javascript:hideAll(document.getElementById('post_content'), document.getElementById('link_content'))"><div class="span12" id="header">
+				<a href="javascript:hideAll(document.getElementById('post_content'), document.getElementById('link_content'), document.getElementById('home_content'))"><div class="span12" id="header">
 					<img class="img-polaroid" src="http://www.gravatar.com/avatar/8517da374e3aed4709fb7b1580d8baef?d=retro&s=140" />
 					<h5>the crossroads between the art of imagination and technology</h5>
 				</div></a>
 				<nav id="bio_container">
 					<div class="span12" id="mini_bio">
 						<p><a href="http://en.wikipedia.org/wiki/P%C3%BAca"><span id="pooka">Pooka</span></a> bytes are my idea of creative coding.  I love art and technology, and I'm excited to continue experimenting more with interactive media.  This site is an exercise in learning some new tools for web development and a mini portfolio of some of my work. </p>
-						<p>Other than working on projects like this, I enjoy playing video games and drawing on my free time.  I am currently getting more involved with game development and music as well!</p>
+						<p>Other than working on projects like this, I enjoy playing video games and drawing on my free time.  I am currently getting more involved with game/mobile app development and music as well!</p>
 					</div>
 				</nav>
 				<div class="span12" id="contact_cont"><nav class="row-fluid" id="contact_icons">
@@ -53,8 +53,8 @@
 			<div class="span9 offset3" id="home_content">
 				<div class="span3 text-left">
 					<p>Welcome to my personal website, where I showcase current projects and connect with the world via social media!</p>
-					<p>Click on the buttons at the top to navigate the site (uses JavaScript/jQuery).</p>
-					<p>This website is built with my custom code using the <a href="http://twitter.github.io/bootstrap/index.html"><span class="label label-info">Bootstrap</span></a> framework.</p>
+					<p>Click on the buttons at the top to navigate the site (click on the header image to come back to this home page).</p>
+					<p>This website was built with my custom code using the <a href="http://twitter.github.io/bootstrap/index.html"><span class="label label-info">Bootstrap</span></a> framework.</p>
 				</div>
 				<div class="span9">
 					<img class="img-circle" src="http://24.media.tumblr.com/caeaad74b6db293352c08eadbd11780e/tumblr_mjsaf4aSwd1qb8y0xo1_r2_500.png" />

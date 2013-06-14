@@ -105,6 +105,11 @@ div #scrollable {
 	color: white;
 }
 
+#home_content img {
+	width: 40%;
+	height: auto;
+}
+
 #post_content {
 	/* margin-top: 10px; */
 	background-color: #8899A6;

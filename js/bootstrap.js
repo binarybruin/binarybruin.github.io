@@ -1,6 +1,6 @@
 /* CUSTOM CODE */
 
-function hideshow(div){
+function hideShow(div){
 	if (!document.getElementById)
 		return
 	if (div.style.display=="block") {
@@ -12,13 +12,26 @@ function hideshow(div){
 	}
 }
 
-function hideAll(div1, div2) {
+/* Code to fade home page and fade in content */
+function hideMain(posts, main){
+	if (!document.getElementById)
+		return
+	$(main).fadeOut(500);
+	if (document.getElementById('post_content').style.display=="block")
+		$(document.getElementById('post_content')).fadeOut(500);
+	if (document.getElementById('link_content').style.display=="block")
+		$(document.getElementById('link_content')).fadeOut(500);	
+	$(posts).fadeIn(500);
+}
+
+function hideAll(div1, div2, div3) {
 	if (!document.getElementById)
 		return
 	if (div1.style.display=="block")
 		$(div1).fadeOut(500);
 	if (div2.style.display=="block")
 		$(div2).fadeOut(500);
+	$(div3).fadeIn(500);
 }
 
 /* ===================================================
