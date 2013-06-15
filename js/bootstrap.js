@@ -8,7 +8,8 @@ function hideShow(div){
 		}
 	else {
 		$(div).fadeIn(500);
-		div.scrollIntoView(false);
+		if ($(window).width() <= 768)
+			div.scrollIntoView(false);
 	}
 }
 
@@ -24,6 +25,20 @@ function hideMain(posts, main){
 	$(posts).fadeIn(500);
 	if ($(window).width() <= 768)
 		posts.scrollIntoView(false);
+}
+
+function hideShowPost(div1, div2) {
+	if (!document.getElementById)
+		return
+	if (div1.style.display=="block") {
+		$(div1).fadeOut(500);
+		$(div2).fadeIn(500);
+	}
+	else {
+		$(div2).fadeOut(500);
+		$(div1).fadeIn(500);
+	}
+	
 }
 
 function hideAll(div1, div2, div3) {

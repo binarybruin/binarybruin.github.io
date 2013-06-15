@@ -71,16 +71,32 @@
 		<!-- CODE FOR POST CONTENT -->
 		<section class="row-fluid">
 			<div class="span9 offset3" id="post_content">
-				<div class="span3 text-left">
-					<h4>Monster Maker</h4>
-					<p>this was a fun project I worked on to learn more about user interface design and coding a Flash game with ActionScript</p>
-					<p>I wanted to create something fun yet simple so that I could draw and develop the whole thing quickly while learning more about using Adobe Flash.</p>
-					<p>Go ahead and create your monster right here now!</p>
-					<p>2013</p>
+				<div id="monster_content">
+					<div class="span3 text-left">
+						<h4>Monster Maker</h4>
+						<p>this was a fun project I worked on to learn more about user interface design and coding a Flash game with ActionScript</p>
+						<p>I wanted to create something fun yet simple so that I could draw and develop the whole thing quickly while learning more about using Adobe Flash.</p>
+						<p>Go ahead and create your monster right here now!</p>
+						<p>2013</p>
+					</div>
+					<div class="span9">
+						<embed src="media/monstermakerfinal.swf"  height="500" width="600px" />
+					</div>
 				</div>
-				<div class="span9">
-					<embed src="media/monstermakerfinal.swf"  height="500" width="600px" />
+				<!-- <div id="sounddesign">
+					<div class="span3 text-left">
+						<h4>Sound Design Project</h4>
+						<p>This project is a breakdown of edited sound effects, ambient audio, and music clips for a short story.</p>
+						<p>It was a final project for my film class: <i>The Art and Technique of Filmmaking</i>.</p>
+					</div>
+					<div class="span9">
+						<iframe width="480" height="360" src="http://www.youtube.com/embed/bAfY3qP3E-0" frameborder="0" allowfullscreen></iframe>
+					</div>
 				</div>
+				<ul class="pager">
+					<li><a href="javascript:hideShowPost(document.getElementById('monster_content'), document.getElementById('sounddesign'))">&lt;</a></li>
+					<li><a href="javascript:hideShowPost(document.getElementById('monster_content'), document.getElementById('sounddesign'))">&gt;</a></li>
+				</ul> -->
 			</div>
 		</section>
 		
@@ -88,10 +104,57 @@
 		<section class="row-fluid">
 			<div class="span9 offset3" id="link_content">
 				<div class="span12 text-center">
-					<p>to view more samples of my creative work, including drawings, graphics, video/audio editing, and more:</p>
-					<p><a href="http://www.michellegraphix.wordpress.com"><span class="label label-info" id="click_here">click here</span></a></p>
+					<ul class="thumbnails">
+						<li class="span6">
+							<div class="span10">
+								<a href="#myModal" data-toggle="modal">
+									<img src="http://michellegraphix.files.wordpress.com/2010/11/bruincloudswallpaper.png" alt="">
+								</a>
+								<p>UCLA Bruin Wallpaper</p>
+							</div>
+						</li>
+						<li class="span6">
+							<div class="span10">
+								<a href="#grphcModal" data-toggle="modal">
+									<img src="http://michellegraphix.files.wordpress.com/2010/11/techfairad71.jpg" alt="">
+								</a>
+								<p>Flyer for one of our technical events organized for students living on campus</p>
+								<p>Edited in Photoshop</p>
+							</div>
+						</li>
+					</ul>
 				</div>
+				<div id="myModal" class="modal hide fade span8" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+							<h4>Bruin Clouds Wallpaper used in computer labs</h4>
+						</div>
+						<div class="modal-body">
+							<img src="http://michellegraphix.files.wordpress.com/2010/11/bruincloudswallpaper.png" />
+						</div>
+						<div class="modal-footer">
+							<!-- <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button> -->
+						</div>
+				</div>
+				<div id="grphcModal" class="modal hide fade span8" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+							<h4>Tech Fair Flyer</h4>
+						</div>
+						<div class="modal-body">
+							<img src="http://michellegraphix.files.wordpress.com/2010/11/techfairad71.jpg" />
+						</div>
+						<div class="modal-footer">
+							<!-- <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button> -->
+						</div>
+				</div>
+				<div class="span12">
+						<h4>to view more samples of my creative work, including drawings, graphics, video/audio editing, and more:</h4>
+						<p><a href="http://www.michellegraphix.wordpress.com"><span class="label label-info" id="click_here">click here</span></a></p>
+				</div>
+			</div>
 		</section>
+		
 	</section>
 
 	<!-- CODE FOR FOOTER -->

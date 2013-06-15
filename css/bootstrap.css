@@ -6,7 +6,7 @@ div {
 }
 
 img {
-	opacity: 0.8;
+	opacity: 0.75;
 	transition: opacity 400ms linear;
 }
 
@@ -125,6 +125,10 @@ div #scrollable {
 	margin-left: 10px;
 }
 
+#sounddesign {
+	display: none;
+}
+
 #link_content {
 	margin-top: 10px;
 	background-color: #8899A6;
@@ -145,7 +149,6 @@ div #scrollable {
 	margin-top: 10px;
 	color: #ACACBC;
 }
-
 
 /*!
  * Bootstrap v2.3.2
@@ -5349,9 +5352,10 @@ input[type="submit"].btn.btn-mini {
 .modal {
   position: fixed;
   top: 10%;
-  left: 50%;
+  left: 20%;
   z-index: 1050;
-  width: 560px;
+  width: 50%;
+  height: auto;
   margin-left: -280px;
   background-color: #ffffff;
   border: 1px solid #999;
@@ -5706,7 +5710,7 @@ input[type="submit"].btn.btn-mini {
 
 .thumbnail {
   display: block;
-  padding: 4px;
+  /* padding: 4px; */
   line-height: 20px;
   border: 1px solid #ddd;
   -webkit-border-radius: 4px;
