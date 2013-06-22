@@ -24,7 +24,7 @@ function hideMain(posts, main){
 		$(document.getElementById('link_content')).fadeOut(500);	
 	$(posts).fadeIn(500);
 	if ($(window).width() <= 768)
-		posts.scrollIntoView(false);
+		posts.scrollIntoView(true);
 }
 
 function hideShowPost(div1, div2) {
