@@ -120,7 +120,12 @@ div #scrollable {
 	margin: 10px 10px 10px 10px;
 }
 
-.post_content p {
+#post_content1 p {
+	text-align: left;
+	margin-left: 10px;
+}
+
+#post_content2 p {
 	text-align: left;
 	margin-left: 10px;
 }
