@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Michelle Auyoung Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 800px; margin: auto; background: #181a1b; color: #eee; }
+    header { text-align: center; margin: 2em 0 1em 0; }
+    h1 { font-size: 2.2em; }
+    h2 { border-bottom: 2px solid #444; margin-top: 2em; }
+    section { margin-bottom: 2em; }
+    nav {
+      position: sticky; top: 0; background: #242526; padding: 0.6em 0; text-align: center; z-index: 99; border-radius:0 0 8px 8px;
+    }
+    nav a {
+      color: #32b5ff; margin: 0 1em; text-decoration: none; font-size: 1.12em; transition: color .2s;
+    }
+    nav a:hover { color: #ffd700; }
+
+    .biography img { border-radius: 50%; width: 120px; margin-right: 1em; float: left; }
+
+    .project-gallery { display: flex; flex-wrap: wrap; gap: 20px; }
+    .project { background: #222; padding: 1em; border-radius: 5px; width: 240px; cursor:pointer; transition: box-shadow .2s; }
+    .project:hover { box-shadow: 0 0 15px #32b5ff33; }
+    .project img { width: 100%; border-radius: 5px; }
+
+    .resume { background: #222; padding: 1em; border-radius: 5px; }
+    .resume-details { display: none; margin-top:0.4em;}
+    .resume-header { cursor:pointer; font-weight:bold; margin:0.2em 0 0.4em 0; color:#32b5ff; }
+    .resume-header:hover { color:#ffd700; }
+
+    /* Modal styles */
+    .modal { display: none; position: fixed; z-index: 999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto;
+      background-color: rgba(28,29,30,0.95); }
+    .modal-content { background-color: #222; margin: 8% auto; padding: 2em; border-radius: 8px; width: 90%; max-width: 400px; color:#eee;}
+    .close { color: #ffd700; float: right; font-size: 1.6em; font-weight: bold; cursor:pointer;}
+
+    .contact { background: #222; padding: 1em; border-radius: 5px; }
+    .contact a { color: #32b5ff; text-decoration: none; }
+    .contact-form input, .contact-form textarea {
+      width: 95%; padding: 0.6em; margin: 0.5em 0; border-radius: 6px; border: none; background: #242526; color: #eee;
+    }
+    .contact-form button {
+      padding: 0.65em 2em; background: #32b5ff; color: #181a1b; border: none; border-radius: 6px; font-weight:bold; cursor:pointer;
+      transition: background .2s;
+    }
+    .contact-form button:hover { background: #ffd700; color:#181a1b; }
+
+    /* Dark/light mode toggle */
+    #theme-toggle { background:#222; color:#32b5ff; border-radius:6px; border:none; padding:0.6em 1.6em; cursor:pointer; margin-top:1em;}
+    #theme-toggle.light { background:#eee; color:#222;}
+    body.light-mode { background:#f2f2f8; color:#17191a;}
+    body.light-mode .resume, body.light-mode .project, body.light-mode .contact, body.light-mode .modal-content { background:#fff; color:#222; }
+    body.light-mode nav { background:#f5f5f5;}
+    body.light-mode nav a { color:#268dd3; }
+
+    @media (max-width: 600px) {
+      .project-gallery { flex-direction: column; }
+      .project { width: auto; }
+      .biography img { float: none; display: block; margin: auto auto 1em auto; }
+      .modal-content {margin: 15% auto;}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#biography">Bio</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+    <button id="theme-toggle" aria-label="Toggle theme">🌙 Toggle Theme</button>
+  </nav>
+  <header>
+    <h1>Michelle Auyoung</h1>
+    <p>Gameplay Audio Programmer</p>
+  </header>
+
+  <section class="biography" id="biography">
+    <h2>Biography</h2>
+    <img src="https://via.placeholder.com/120" alt="Profile photo">
+    <p>
+      Game audio presents many creative and technical challenges I am excited to solve through collaboration with designers and other engineers across all game teams through the entire game development process.<br>
+      I am passionate about exploring applications of audio in interactive media with an emphasis in storytelling and narrative driven gameplay, and I enjoy prototyping ideas while learning new tools.<br>
+      My main goal is to support the audio team by interfacing with other techinal teams and improving workflows, tools, and efficiency to enable sound designers to make the best game audio experiences from pre-production to shipping.<br>
+      My areas of interest include prototyping gameplay systems and real-time music/interactive audio applications, spatial audio, immersive experiences, audio accessibility, and XR."
+    </p>
+    <div style="clear: both;"></div>
+  </section>
+
+  <section class="project-gallery" id="projects">
+    <h2>Shipped Games</h2>
+      <div class="project" onclick="openModal('Project Title', 'A game about ...', 'https://via.placeholder.com/240x135', 'https://github.com/yourusername/project')">
+        <img src="https://via.placeholder.com/240x135" alt="Project screenshot">
+        <h3><i>Avowed</i> | Obsidian Entertainment</h3>
+        <p>Fantasy action RPG | Gameplay Audio Programmer<br>
+          As the sole audio programmer, I collaborated directly with many game teams from engine and tools programmers to area/level designers to technical sound designers and technical artists.
+          <ul>
+            <li>Dynamic data-driven music system that changes with combat intensity.</li>
+            <li>Worked on mobile AR games and PC puzzle adventures.</li>
+            <li>Enjoy composing game music and designing audio effects.</li>
+            <li>Proactive team member, mentor, and puzzle solver!</li>
+          </ul>
+        </p>
+      </div>
+      <div class="project" onclick="openModal('Second Project', 'Another sample game or tool...', 'https://via.placeholder.com/240x135', 'https://yourdemo.com')">
+        <img src="https://via.placeholder.com/240x135" alt="Project screenshot">
+        <h3>Second Project</h3>
+        <p>Another project summary...</p>
+      </div>
+  </section>
+
+  <!-- Modal for Project Detail -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <img id="modalImg" src="" style="width:100%; border-radius:4px;" alt="">
+      <p id="modalDesc"></p>
+      <a id="modalLink" href="#" target="_blank" style="color:#ffd700;">Project link/demo</a>
+    </div>
+  </div>
+
+  <section class="resume" id="resume">
+    <h2>Resume</h2>
+    <div class="resume-header" onclick="toggleResume()">▶ Experience & Education</div>
+    <div class="resume-details">
+      <strong>Experience:</strong><br>
+      [Role, company, dates, short description]<br>
+      <strong>Education:</strong><br>
+      <ul>
+        <li><b>New York University</b> - Music Technology (Masters, 2013 - 2015)</li>
+        <li><b>University of California</b> - Computer Science (Bachelors, 2007 - 2011)</li>
+      </ul><br>
+      <strong>Skills/Tech:</strong> C++, UE5, Wwise, Unity, C#, Python, ARKit<br>
+      <a href="resume.pdf" target="_blank">Download PDF resume</a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>
+      Email: <a href="mailto:your.email@example.com">your.email@example.com</a><br>
+      LinkedIn: <a href="#" target="_blank">linkedin.com/in/michelleauyoung</a><br>
+      GitHub: <a href="#" target="_blank">github.com/binarybruin</a>
+    </p>
+  
+  <script>
+    // Resume accordion
+    function toggleResume() {
+      var details = document.querySelector('.resume-details');
+      var header = document.querySelector('.resume-header');
+      if (details.style.display === 'block') {
+        details.style.display = 'none';
+        header.innerHTML = '▶ Experience & Education';
+      } else {
+        details.style.display = 'block';
+        header.innerHTML = '▼ Experience & Education';
+      }
+    }
+
+    // Project modal
+    function openModal(title, desc, img, link) {
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalDesc').innerText = desc;
+      document.getElementById('modalImg').src = img;
+      document.getElementById('modalLink').href = link;
+      document.getElementById('projectModal').style.display = 'block';
+    }
+    function closeModal() {
+      document.getElementById('projectModal').style.display = 'none';
+    }
+
+    // Dark/light mode toggle
+    document.getElementById('theme-toggle').onclick = function() {
+      var body = document.body;
+      var btn = document.getElementById('theme-toggle');
+      body.classList.toggle('light-mode');
+      btn.classList.toggle('light');
+      btn.innerText = body.classList.contains('light-mode') ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+  </script>
+</body>
+</html>
